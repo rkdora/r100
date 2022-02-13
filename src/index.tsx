@@ -4,9 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {Route, BrowserRouter} from "react-router-dom";
+// import Login from "./Login";
+import Roomin from "./Roomin";
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <>
+    <Route exact path="/" component={App} />
+    {/* <Route exact path="/login" component={Login} /> */}
+    <Route exact path="/welcome" component={Roomin} />
+    </>
+    
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
