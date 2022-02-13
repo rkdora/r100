@@ -8,7 +8,7 @@ const Login: React.FC = (props: any) => {
   const [name, setName] = useState("");
 
   const newUser = (id: string) => {
-    db.collection("users").doc(id).set({ name: name, numbers: "" });
+    db.collection("users").doc(id).set({ name: name, numbers: [] });
     setName("");
   };
 

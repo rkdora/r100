@@ -23,15 +23,15 @@
   color: green;
 }
 
-.app__number {
+/* .app__number {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  outline: none;
+  outline: 2px;
   margin-top: 1px;
   color: dimgray;
-  font-size: 120px;
-}
+} */
+
 .app__logout {
   cursor: pointer;
   background-color: transparent;
